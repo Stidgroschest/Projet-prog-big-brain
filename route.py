@@ -1,6 +1,6 @@
 
 #Voici la variable globale qui est la route
-route = [(11,0),(11,1),(11,2),(10,3),(9,4),(8,5)]
+route = []
 
 #Ce programme détermine la longueur de la route globale.
 def longueur():
@@ -27,5 +27,12 @@ def couple_est_present(couple):
         if route[i] == couple:
             Status = True
     return Status
+
+
+#Ce programme supprimer le dernier couple présent dans la route globale.
+def retirer_dernier_couple():
+    global route
+    route.pop(len(route)-1)
+
 
 
