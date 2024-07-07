@@ -40,5 +40,8 @@ def test():
     print(route.longueur())
     print(route.dernier_couple())
     print(f"Le couple {couple2} est t'il present: {route.couple_est_present(couple2)}")
+
+def test2():
+
 if __name__ == '__main__':
     test()

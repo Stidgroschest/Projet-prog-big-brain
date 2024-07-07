@@ -58,3 +58,6 @@ def cout_route(tab2d,tab1d):
     return cout
 
 #Ce programme retourne la liste contenant la route globale.
+def obtenir():
+    global route
+    return route
