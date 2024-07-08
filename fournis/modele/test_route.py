@@ -1,5 +1,5 @@
 import carte
-
+import route
 def test_longueur():
 
     resultat = route.longueur()
@@ -44,7 +44,8 @@ def test2():
     carte_topo = carte.charger
     route1 = [(10,0),(10,1),(9,2),(8,3)]
     route2 =[(10,0)]
-    resultat2 = route.cout_route(carte_topo,route2)
+    resultat1 = route.cout_route(carte_topo, route1)
+    resultat2 = route.cout_route(carte_topo, route2)
     print(resultat1)
     print(resultat2)
     assert resultat1 == 0.1033
